@@ -1,8 +1,9 @@
 describe("NumberOpinion", function() {
-  var numberOpinion;
+  var numberOpinion, divisorService;
 
   beforeEach(function() {
-    numberOpinion = new NumberOpinion();
+    divisorService = new DivisorService();
+    numberOpinion = new NumberOpinion(divisorService);
   });
 
   describe("isANumberILike", function(){
@@ -36,17 +37,6 @@ describe("NumberOpinion", function() {
     it("should return a number that is divisible by 3 and even", function(){
       var result = numberOpinion.getRandomAcceptableNumber();
       expectToBeDivisibleBy3AndEven(result);
-    });
-  });
-
-  describe("__isDivisibleBy3", function(){
-    it("should return true when number is divisible by 3", function(){
-      var result = numberOpinion.__isDivisibleBy3(9);
-      expect(result).toBeTruthy();
-    });
-    it("should return false when number is not divisible by 3", function(){
-      var result = numberOpinion.__isDivisibleBy3(10);
-      expect(result).toBeFalsy();
     });
   });
 });
