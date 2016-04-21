@@ -4,6 +4,7 @@ describe("NumberOpinion", function() {
   beforeEach(function() {
     divisorService = new DivisorService();
     numberOpinion = new NumberOpinion(divisorService);
+    setupNumberOpinion();
   });
 
   describe("isANumberILike", function(){
@@ -42,6 +43,10 @@ describe("NumberOpinion", function() {
 });
 
 var expectToBeDivisibleBy3AndEven = function(result) {
-      expect(result % 2).toEqual(0);
-      expect(result % 3).toEqual(0);
+    expect(result % 2).toEqual(0);
+    expect(result % 3).toEqual(0);
 }
+var setupNumberOpinion = function() {
+    divisorService = new DivisorService();
+    numberOpinion = new NumberOpinion(divisorService);
+};
