@@ -28,7 +28,7 @@ describe("NumberOpinion", function() {
   describe("getLuckyNumber", function(){
     it("should return 18", function(){
       var result = numberOpinion.getLuckyNumber();
-      expect(result == 18).toEqual(true);
+      expect(result).toEqual(18);
     });
   });
   
