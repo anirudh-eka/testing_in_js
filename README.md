@@ -1,5 +1,7 @@
 # Testing in Javascript
 
+To see step by step refactors just checkout the code at each commit. They loosely follow the order in the Tips section below.
+
 ## How to run tests
 
 To run the server:
