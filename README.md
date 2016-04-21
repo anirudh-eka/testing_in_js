@@ -10,10 +10,10 @@ To run the automated CI task with PhantomJS:
 
   rake jasmine:ci
 
-## Concepts:
+## Tips:
 - using 'when' for context
 - assert exceptions
 - make asserts specific
-- consolidating compound assertions in helper method
+- custom assertions: consolidating compound assertions in helper method
 - private methods
 - using submethods for long setups

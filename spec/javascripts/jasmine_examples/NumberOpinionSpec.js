@@ -35,8 +35,7 @@ describe("NumberOpinion", function() {
   describe("getRandomAcceptableNumber", function(){
     it("should return a number that is divisible by 3 and even", function(){
       var result = numberOpinion.getRandomAcceptableNumber();
-      expect(result % 2).toEqual(0);
-      expect(result % 3).toEqual(0);
+      expectToBeDivisibleBy3AndEven(result);
     });
   });
 
@@ -51,3 +50,8 @@ describe("NumberOpinion", function() {
     });
   });
 });
+
+var expectToBeDivisibleBy3AndEven = function(result) {
+      expect(result % 2).toEqual(0);
+      expect(result % 3).toEqual(0);
+}
