@@ -6,12 +6,12 @@ describe("NumberOpinion", function() {
   });
 
   describe("isANumberILike", function(){
-    it("should return true", function() {
+    it("should return true when number is divisible by 3", function() {
       var result = numberOpinion.isANumberILike(3);
       expect(result).toBeTruthy();
     });
 
-    it("should return false", function() {
+    it("should return false when number is not divisible by 3", function() {
       var result = numberOpinion.isANumberILike(8);
       expect(result).toBeFalsy();
     });
