@@ -12,8 +12,8 @@ To run the automated CI task with PhantomJS:
 
 ## Concepts:
 - using 'when' for context
-- make asserts specific
 - assert exceptions
+- make asserts specific
 - consolidating compound assertions in helper method
 - private methods
 - using submethods for long setups

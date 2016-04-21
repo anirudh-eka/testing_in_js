@@ -17,15 +17,11 @@ describe("NumberOpinion", function() {
     });
 
     it("should throw exception when number is 12", function(){
-      var errorIsThrown = false;
-      try {
+      var isANumberILikeCalledWith12 = function() {
         numberOpinion.isANumberILike(12);
       }
-      catch(error){
-        errorIsThrown = true;
-      }
 
-      expect(errorIsThrown).toBeTruthy();
+      expect(isANumberILikeCalledWith12).toThrow();
     });
   });
 
